@@ -1,3 +1,6 @@
+const { hash } = require("bcrypt");
+const bcrypt = require('bcrypt')
+
 // bit
 const x = 28888
 console.log(x)
@@ -12,7 +15,7 @@ console.log(byte)
 
 
 
-// converts ascii to bytes 
+// converts bytes to ascii
 function asciiToBytes(args){
     const arr = []
     for(i=0;i<args.length;i++){
@@ -27,5 +30,8 @@ function asciiToBytes(args){
 const ascii = "nikhil"
 const bytess = asciiToBytes(ascii)
 console.log(bytess)
+
+
+
 
 
